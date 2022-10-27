@@ -1,0 +1,922 @@
+[
+    {
+        "filename": "/bot_code/dai-bridge-bot-eff/app/src/agent-l2.js",
+        "lineNumber": 49,
+        "line": "                    provider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot-eff/app/src/agent-l2.js",
+        "lineNumber": 51,
+        "line": "                    DAI_L2 = new forta_agent_1.ethers.Contract(daiL2Address, erc20Abi, provider);"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot-eff/app/src/agent-l1.js",
+        "lineNumber": 72,
+        "line": "                    provider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot-eff/app/src/agent-l1.js",
+        "lineNumber": 74,
+        "line": "                    DAI_L1 = new forta_agent_1.ethers.Contract(daiL1Address, erc20Abi, provider);"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot-eff/app/src/agent.js",
+        "lineNumber": 92,
+        "line": "    initialize: (0, exports.provideInitialize)(networkManagerCurr, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/Deposit_Agent/app/src/agent.js",
+        "lineNumber": 45,
+        "line": "var provider = new forta_agent_1.ethers.providers.JsonRpcProvider(\"https://polygon-mainnet.infura.io/v3/19e214bd23664347b3113630b649d4c4\");"
+    },
+    {
+        "filename": "/bot_code/Deposit_Agent/app/src/agent.js",
+        "lineNumber": 46,
+        "line": "var stateReceiver = new forta_agent_1.ethers.Contract(contract_addresses_1.default.stateReceiver.address, contract_addresses_1.default.stateReceiver.abi, provider);"
+    },
+    {
+        "filename": "/bot_code/Deposit_Agent/app/src/agent.js",
+        "lineNumber": 73,
+        "line": "                abiCoder = new forta_agent_1.ethers.utils.AbiCoder;"
+    },
+    {
+        "filename": "/bot_code/umee-high-utilization-ratio-bot/app/src/agent.js",
+        "lineNumber": 50,
+        "line": "var multicallProvider = new multicall_1.MulticallProvider((0, forta_agent_1.getEthersProvider)());"
+    },
+    {
+        "filename": "/bot_code/umee-high-utilization-ratio-bot/app/src/agent.js",
+        "lineNumber": 57,
+        "line": "                    lendingPool = new forta_agent_1.ethers.Contract(config.lendingPoolAddress, [constants_1.GET_RESERVES_LIST_ABI, constants_1.GET_RESERVE_DATA_ABI], provider);"
+    },
+    {
+        "filename": "/bot_code/umee-high-utilization-ratio-bot/app/src/agent.js",
+        "lineNumber": 140,
+        "line": "    initialize: (0, exports.provideInitialize)(reserveData, multicallProvider, (0, forta_agent_1.getEthersProvider)(), agent_config_1.default),"
+    },
+    {
+        "filename": "/bot_code/umee-reentrancy-lending-bot/app/src/agent.js",
+        "lineNumber": 48,
+        "line": "    var lendingPool = new forta_agent_1.ethers.utils.Interface(abi_1.default);"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 59,
+        "line": "                    wethPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.WETH, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 60,
+        "line": "                    wbtcPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.WBTC, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 61,
+        "line": "                    linkPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.LINK, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 62,
+        "line": "                    uniPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.UNI, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 63,
+        "line": "                    usdcPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.USDC, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 64,
+        "line": "                    usdtPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.USDT, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 65,
+        "line": "                    daiPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.DAI, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 66,
+        "line": "                    fraxPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.FRAX, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 67,
+        "line": "                    mimPriceFeed: new forta_agent_1.ethers.Contract(priceFeed.MIM, utils_1.aggregatorV3InterfaceABI, provider),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Profitable_Trades/app/src/agent.js",
+        "lineNumber": 169,
+        "line": "    initialize: (0, exports.initialize)((0, forta_agent_1.getEthersProvider)(), priceFeedData),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Large_Size_Decrease/app/src/utils.js",
+        "lineNumber": 14,
+        "line": "        if (forta_agent_1.ethers.BigNumber.from(args.key).eq(decreasePositionArgs.key) &&"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Large_Size_Decrease/app/src/utils.js",
+        "lineNumber": 15,
+        "line": "            forta_agent_1.ethers.BigNumber.from(args.size).eq(decreasePositionArgs.sizeDelta))"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Large_Size_Decrease/app/src/agent.js",
+        "lineNumber": 81,
+        "line": "    initialize: (0, exports.initialize)((0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/umee-large-treasury-token-price-change-bot/app/src/utils.js",
+        "lineNumber": 5,
+        "line": "exports.createNegativeAnswerFinding = exports.createPriceChangeFinding = exports.ethersBnToBn = void 0;"
+    },
+    {
+        "filename": "/bot_code/umee-large-treasury-token-price-change-bot/app/src/utils.js",
+        "lineNumber": 11,
+        "line": "exports.ethersBnToBn = ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-large-treasury-token-price-change-bot/app/src/agent.js",
+        "lineNumber": 62,
+        "line": "                                        ChainlinkFeed = new forta_agent_1.ethers.Contract(token.chainlinkFeedAddress, [constants_1.DECIMALS_ABI, constants_1.DESCRIPTION_ABI, constants_1.LATEST_ANSWER_ABI, constants_1.LATEST_ROUND_DATA_ABI], provider);"
+    },
+    {
+        "filename": "/bot_code/umee-large-treasury-token-price-change-bot/app/src/agent.js",
+        "lineNumber": 78,
+        "line": "                                                lastAnswer: (0, utils_1.ethersBnToBn)(roundData.answer, decimals),"
+    },
+    {
+        "filename": "/bot_code/umee-large-treasury-token-price-change-bot/app/src/agent.js",
+        "lineNumber": 84,
+        "line": "                                                intervalSeconds: forta_agent_1.ethers.BigNumber.from(token.intervalSeconds),"
+    },
+    {
+        "filename": "/bot_code/umee-large-treasury-token-price-change-bot/app/src/agent.js",
+        "lineNumber": 105,
+        "line": "                    timestamp = forta_agent_1.ethers.BigNumber.from(blockEvent.block.timestamp);"
+    },
+    {
+        "filename": "/bot_code/umee-large-treasury-token-price-change-bot/app/src/agent.js",
+        "lineNumber": 115,
+        "line": "                                        _a = utils_1.ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-large-treasury-token-price-change-bot/app/src/agent.js",
+        "lineNumber": 145,
+        "line": "    initialize: (0, exports.provideInitialize)(tokens, (0, forta_agent_1.getEthersProvider)(), agent_config_1.default),"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/bnbx-supply.js",
+        "lineNumber": 56,
+        "line": "                bnbX = new forta_agent_1.ethers.Contract(constants_1.BNBx, abi_1.default.BnbX.abi, (0, forta_agent_1.getEthersProvider)());"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/bnbx-supply.js",
+        "lineNumber": 56,
+        "line": "                bnbX = new forta_agent_1.ethers.Contract(constants_1.BNBx, abi_1.default.BnbX.abi, (0, forta_agent_1.getEthersProvider)());"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/bnbx-supply.js",
+        "lineNumber": 57,
+        "line": "                stakeManager = new forta_agent_1.ethers.Contract(constants_1.STAKE_MANAGER, abi_1.default.StakeManager.abi, (0, forta_agent_1.getEthersProvider)());"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/bnbx-supply.js",
+        "lineNumber": 57,
+        "line": "                stakeManager = new forta_agent_1.ethers.Contract(constants_1.STAKE_MANAGER, abi_1.default.StakeManager.abi, (0, forta_agent_1.getEthersProvider)());"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/bnbx-supply.js",
+        "lineNumber": 58,
+        "line": "                oneEther = forta_agent_1.ethers.utils.parseEther(\"1\");"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/er-drop.js",
+        "lineNumber": 52,
+        "line": "                stakeManager = new forta_agent_1.ethers.Contract(constants_1.STAKE_MANAGER, abi_1.default.StakeManager.abi, (0, forta_agent_1.getEthersProvider)());"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/er-drop.js",
+        "lineNumber": 52,
+        "line": "                stakeManager = new forta_agent_1.ethers.Contract(constants_1.STAKE_MANAGER, abi_1.default.StakeManager.abi, (0, forta_agent_1.getEthersProvider)());"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/er-drop.js",
+        "lineNumber": 53,
+        "line": "                oneEther = forta_agent_1.ethers.utils.parseEther(\"1\");"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/suspicious-withdraw.js",
+        "lineNumber": 48,
+        "line": "            var normalizedValue = forta_agent_1.ethers.utils.formatEther(_amountInBnbX);"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/suspicious-withdraw.js",
+        "lineNumber": 49,
+        "line": "            var minThreshold = forta_agent_1.ethers.utils.parseEther(constants_1.BNBX_UNSTAKE_THRESHOLD);"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/suspicious-rewards.js",
+        "lineNumber": 48,
+        "line": "            var normalizedValue = forta_agent_1.ethers.utils.formatEther(_amount);"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/suspicious-rewards.js",
+        "lineNumber": 49,
+        "line": "            var minThreshold = forta_agent_1.ethers.utils.parseEther(constants_1.MIN_REWARD_THRESHOLD);"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/suspicious-rewards.js",
+        "lineNumber": 50,
+        "line": "            var maxThreshold = forta_agent_1.ethers.utils.parseEther(constants_1.MAX_REWARD_THRESHOLD);"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/suspicious-mint.js",
+        "lineNumber": 53,
+        "line": "            var normalizedValue = forta_agent_1.ethers.utils.formatEther(value);"
+    },
+    {
+        "filename": "/bot_code/bnbx-suspicious-amount-agent/app/src/suspicious-mint.js",
+        "lineNumber": 54,
+        "line": "            var minThreshold = forta_agent_1.ethers.utils.parseEther(constants_1.BNBX_MINT_THRESHOLD);"
+    },
+    {
+        "filename": "/bot_code/minimum-link-balance-polygon-example/app/src/agent.js",
+        "lineNumber": 48,
+        "line": "var ethersProvider = forta_agent_1.getEthersProvider();"
+    },
+    {
+        "filename": "/bot_code/minimum-link-balance-polygon-example/app/src/agent.js",
+        "lineNumber": 57,
+        "line": "                        erc20Contract = new forta_agent_1.ethers.Contract(exports.LINK, exports.ABI, ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/agent-proxy-watcher.js",
+        "lineNumber": 138,
+        "line": "                    proxy = new forta_agent_1.ethers.Contract(proxyInfo.address, proxyInfo.shortABI, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/agent-proxy-watcher.js",
+        "lineNumber": 195,
+        "line": "                    proxy = new forta_agent_1.ethers.Contract(proxyInfo.address, proxyInfo.shortABI, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/agent-withdrawals.js",
+        "lineNumber": 58,
+        "line": "                    return [4 /*yield*/, ethers_1.ethersProvider.getBlock(currentBlock)];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/agent-withdrawals.js",
+        "lineNumber": 61,
+        "line": "                    l2Bridge = new forta_agent_1.ethers.Contract(constants_1.L2_ERC20_TOKEN_GATEWAY, L2Bridge_json_1.default, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/ethers.js",
+        "lineNumber": 2,
+        "line": "exports.ethersProvider = void 0;"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/ethers.js",
+        "lineNumber": 4,
+        "line": "exports.ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/ethers.js",
+        "lineNumber": 4,
+        "line": "exports.ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/agent.js",
+        "lineNumber": 100,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getTransaction(process_1.argv[4])];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/agent.js",
+        "lineNumber": 109,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getTransaction(process_1.argv[4])];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-optimism/app/src/agent.js",
+        "lineNumber": 116,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getBlockNumber()];"
+    },
+    {
+        "filename": "/bot_code/PancakeSwap_-_Auto_CAKE_Admin_Operations/app/src/agent.js",
+        "lineNumber": 77,
+        "line": "    initialize: (0, exports.provideInitialize)(networkManager, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/pstake-stkbnb-substantial-value-bot/app/src/utils.js",
+        "lineNumber": 3,
+        "line": "var ethers = require('ethers').ethers;"
+    },
+    {
+        "filename": "/bot_code/pstake-stkbnb-substantial-value-bot/app/src/agent.js",
+        "lineNumber": 82,
+        "line": "                    description: \"Minted: \".concat(forta_agent_1.ethers.utils.formatEther(amount), \" stkBNB\"),"
+    },
+    {
+        "filename": "/bot_code/pstake-stkbnb-substantial-value-bot/app/src/agent.js",
+        "lineNumber": 111,
+        "line": "                    description: \"Burned: \".concat(forta_agent_1.ethers.utils.formatEther(amount), \" stkBNB\"),"
+    },
+    {
+        "filename": "/bot_code/pstake-stkbnb-substantial-value-bot/app/src/agent.js",
+        "lineNumber": 140,
+        "line": "                    description: \"Deposited: \".concat(forta_agent_1.ethers.utils.formatEther(bnbAmount), \" BNB\"),"
+    },
+    {
+        "filename": "/bot_code/pstake-stkbnb-substantial-value-bot/app/src/agent.js",
+        "lineNumber": 170,
+        "line": "                    description: \"Withdrawn: \".concat(forta_agent_1.ethers.utils.formatEther(bnbAmount), \" BNB\"),"
+    },
+    {
+        "filename": "/bot_code/umee-utoken-exchange-ratio-drop-bot/app/src/fetcher.js",
+        "lineNumber": 72,
+        "line": "                        _a = utils_2.ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-utoken-exchange-ratio-drop-bot/app/src/fetcher.js",
+        "lineNumber": 91,
+        "line": "                        _a = utils_2.ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-utoken-exchange-ratio-drop-bot/app/src/utils.js",
+        "lineNumber": 41,
+        "line": "exports.ethersBnToBn = exports.calculateSeverity = exports.calculatePriceRatio = exports.getUTokenPrices = exports.createFinding = exports.LENDING_POOL_IFACE = exports.UMEE_ORACLE_PRICE_IFACE = exports.UTOKENS_IFACE = void 0;"
+    },
+    {
+        "filename": "/bot_code/umee-utoken-exchange-ratio-drop-bot/app/src/utils.js",
+        "lineNumber": 126,
+        "line": "exports.ethersBnToBn = ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-utoken-exchange-ratio-drop-bot/app/src/agent.js",
+        "lineNumber": 109,
+        "line": "    initialize: (0, exports.provideInitialize)(new fetcher_1.default((0, forta_agent_1.getEthersProvider)(), agent_config_1.default), agent_config_1.default.uTokens),"
+    },
+    {
+        "filename": "/bot_code/umee-utoken-exchange-ratio-drop-bot/app/src/agent.js",
+        "lineNumber": 110,
+        "line": "    handleBlock: (0, exports.provideHandleBlock)(new fetcher_1.default((0, forta_agent_1.getEthersProvider)(), agent_config_1.default), agent_config_1.default.uTokenPairs),"
+    },
+    {
+        "filename": "/bot_code/MaticPriceChange_Agent/app/src/agent.js",
+        "lineNumber": 46,
+        "line": "var ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/MaticPriceChange_Agent/app/src/agent.js",
+        "lineNumber": 47,
+        "line": "var linkContract = new forta_agent_1.ethers.Contract(constants_1.MATIC_USD_PRICE_AGG_ADDRESS, constants_1.MATIC_USD_ABI, ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/hal-biconomy-executor-balance/app/src/network.js",
+        "lineNumber": 22,
+        "line": "        blockExplorerUrl: \"api.etherscan.io\","
+    },
+    {
+        "filename": "/bot_code/hal-biconomy-executor-balance/app/src/network.js",
+        "lineNumber": 52,
+        "line": "        blockExplorerUrl: \"api-optimistic.etherscan.io\","
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 52,
+        "line": "    return value.div(forta_agent_1.ethers.constants.WeiPerEther);"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 84,
+        "line": "                    description: \"Minted: \".concat(forta_agent_1.ethers.utils.formatEther(amount), \" stkBNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 98,
+        "line": "                    description: \"Minted: \".concat(forta_agent_1.ethers.utils.formatEther(amount), \" stkBNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 112,
+        "line": "                    description: \"Minted: \".concat(forta_agent_1.ethers.utils.formatEther(amount), \" stkBNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 132,
+        "line": "                    description: \"Burned: \".concat(forta_agent_1.ethers.utils.formatEther(amount), \" stkBNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 146,
+        "line": "                    description: \"Burned: \".concat(forta_agent_1.ethers.utils.formatEther(amount), \" stkBNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 160,
+        "line": "                    description: \"Burned: \".concat(forta_agent_1.ethers.utils.formatEther(amount), \" stkBNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 180,
+        "line": "                    description: \"Deposited: \".concat(forta_agent_1.ethers.utils.formatEther(bnbAmount), \" BNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 195,
+        "line": "                    description: \"Deposited: \".concat(forta_agent_1.ethers.utils.formatEther(bnbAmount), \" BNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 210,
+        "line": "                    description: \"Deposited: \".concat(forta_agent_1.ethers.utils.formatEther(bnbAmount), \" BNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 232,
+        "line": "                    description: \"Withdrawn: \".concat(forta_agent_1.ethers.utils.formatEther(bnbAmount), \" BNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 247,
+        "line": "                    description: \"Withdrawn: \".concat(forta_agent_1.ethers.utils.formatEther(bnbAmount), \" BNB\"),"
+    },
+    {
+        "filename": "/bot_code/Large_Value_stkBNB_Mint_Burn/app/src/agent.js",
+        "lineNumber": 262,
+        "line": "                    description: \"Withdrawn: \".concat(forta_agent_1.ethers.utils.formatEther(bnbAmount), \" BNB\"),"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/agent-proxy-watcher.js",
+        "lineNumber": 138,
+        "line": "                    proxy = new forta_agent_1.ethers.Contract(proxyInfo.address, proxyInfo.shortABI, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/agent-proxy-watcher.js",
+        "lineNumber": 195,
+        "line": "                    proxy = new forta_agent_1.ethers.Contract(proxyInfo.address, proxyInfo.shortABI, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/agent-withdrawals.js",
+        "lineNumber": 67,
+        "line": "                    return [4 /*yield*/, ethers_1.ethersProvider.getBlock(currentBlock)];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/agent-withdrawals.js",
+        "lineNumber": 70,
+        "line": "                    l2Bridge = new forta_agent_1.ethers.Contract(constants_1.L2_ERC20_TOKEN_GATEWAY, L2Bridge_json_1.default, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/ethers.js",
+        "lineNumber": 2,
+        "line": "exports.ethersProvider = void 0;"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/ethers.js",
+        "lineNumber": 4,
+        "line": "exports.ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/ethers.js",
+        "lineNumber": 4,
+        "line": "exports.ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/agent.js",
+        "lineNumber": 100,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getTransaction(process_1.argv[4])];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/agent.js",
+        "lineNumber": 109,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getTransaction(process_1.argv[4])];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-arbitrum/app/src/agent.js",
+        "lineNumber": 116,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getBlockNumber()];"
+    },
+    {
+        "filename": "/bot_code/basis-trading-ts-1/app/src/utils.js",
+        "lineNumber": 53,
+        "line": "var provider = forta_agent_1.ethers.getDefaultProvider((0, forta_agent_1.getJsonRpcUrl)());"
+    },
+    {
+        "filename": "/bot_code/basis-trading-ts-1/app/src/utils.js",
+        "lineNumber": 53,
+        "line": "var provider = forta_agent_1.ethers.getDefaultProvider((0, forta_agent_1.getJsonRpcUrl)());"
+    },
+    {
+        "filename": "/bot_code/basis-trading-ts-1/app/src/utils.js",
+        "lineNumber": 72,
+        "line": "                    clearingHouseInstance = new forta_agent_1.ethers.Contract(constants_1.CLEARING_HOUSE, ClearingHouse_1.abi, provider);"
+    },
+    {
+        "filename": "/bot_code/basis-trading-ts-1/app/src/utils.js",
+        "lineNumber": 73,
+        "line": "                    accountBalanceInstance = new forta_agent_1.ethers.Contract(constants_1.accountBalance, AccountBalance_1.abi, provider);"
+    },
+    {
+        "filename": "/bot_code/PancakeSwap_-_Large_Delegators_Vote_Change/app/src/agent.js",
+        "lineNumber": 101,
+        "line": "    initialize: provideInitialize(networkManager, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Many_Closing/app/src/utils.js",
+        "lineNumber": 4,
+        "line": "var provider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/umee-large-borrow-bot/app/src/agent.js",
+        "lineNumber": 49,
+        "line": "    var LendingPool = utils_1.SmartCaller.from(new forta_agent_1.ethers.Contract(config.lendingPoolAddress, [constants_1.GET_RESERVE_DATA_ABI], provider), {"
+    },
+    {
+        "filename": "/bot_code/umee-large-borrow-bot/app/src/agent.js",
+        "lineNumber": 69,
+        "line": "                                        erc20Asset = utils_1.SmartCaller.from(new forta_agent_1.ethers.Contract(reserve, [constants_1.BALANCE_OF_ABI], provider));"
+    },
+    {
+        "filename": "/bot_code/umee-large-borrow-bot/app/src/agent.js",
+        "lineNumber": 91,
+        "line": "    handleTransaction: (0, exports.provideHandleTransaction)((0, forta_agent_1.getEthersProvider)(), agent_config_1.default),"
+    },
+    {
+        "filename": "/bot_code/PancakeSwap_-_Large_Swap/app/src/utils.js",
+        "lineNumber": 6,
+        "line": "    const salt = forta_agent_1.ethers.utils.solidityKeccak256([\"address\", \"address\"], [token0, token1]);"
+    },
+    {
+        "filename": "/bot_code/PancakeSwap_-_Large_Swap/app/src/agent.js",
+        "lineNumber": 50,
+        "line": "    handleTransaction: (0, exports.provideBotHandler)(constants_1.LARGE_THRESHOLD, constants_1.PANCAKE_FACTORY_ADDRESS, new data_fetcher_1.default((0, forta_agent_1.getEthersProvider)()), constants_1.INIT_CODE_PAIR_HASH),"
+    },
+    {
+        "filename": "/bot_code/PancakeSwap_-_Large_LP_Token_Deposit-Withdraw/app/src/agent.js",
+        "lineNumber": 99,
+        "line": "    handleTransaction: provideHandleTransaction(config_1.DYNAMIC_CONFIG, (0, forta_agent_1.getEthersProvider)(), new masterchef_fetcher_1.default((0, forta_agent_1.getEthersProvider)(), constants_1.MASTERCHEF_ADDRESS), constants_1.MASTERCHEF_ADDRESS),"
+    },
+    {
+        "filename": "/bot_code/forta-agent-polygon-stader-childpool/app/src/instant-pool-balance.js",
+        "lineNumber": 54,
+        "line": "                ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/forta-agent-polygon-stader-childpool/app/src/instant-pool-balance.js",
+        "lineNumber": 55,
+        "line": "                ChildPool = new forta_agent_1.ethers.Contract(constants_1.CHILDPOOL_ADDRESS, abi_1.default.ChildPool.abi, ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/forta-agent-polygon-stader-childpool/app/src/large-maticX-swap.js",
+        "lineNumber": 52,
+        "line": "            var normalizedValue = parseInt(forta_agent_1.ethers.utils.formatEther(_amountMaticX));"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot/app/src/agent-l2.js",
+        "lineNumber": 50,
+        "line": "                    DAI_L2 = new forta_agent_1.ethers.Contract(daiL2Address, erc20Abi, provider);"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot/app/src/agent-l2.js",
+        "lineNumber": 66,
+        "line": "    handleBlock: provideHandleBlock_L2(constants_1.ERC20_ABI, constants_1.DAI_L2_ADDRESS, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot/app/src/agent-l1.js",
+        "lineNumber": 94,
+        "line": "                    DAI_L1 = new forta_agent_1.ethers.Contract(daiL1Address, erc20Abi, provider);"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot/app/src/agent-l1.js",
+        "lineNumber": 121,
+        "line": "    handleBlock: provideHandleBlock_L1(constants_1.DAI_L1_ADDRESS, constants_1.ERC20_ABI, constants_1.L1_ESCROW_ADDRESS_ARB, constants_1.L1_ESCROW_ADDRESS_OP, constants_1.API_URL, new Fetcher(), constants_1.HEADERS, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/dai-bridge-bot/app/src/agent.js",
+        "lineNumber": 85,
+        "line": "    initialize: (0, exports.provideInitialize)(networkManagerCurr, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/ethers.js",
+        "lineNumber": 2,
+        "line": "exports.ethersProvider = void 0;"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/ethers.js",
+        "lineNumber": 4,
+        "line": "exports.ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/ethers.js",
+        "lineNumber": 4,
+        "line": "exports.ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/agent-balance.js",
+        "lineNumber": 82,
+        "line": "                    wstETH = new forta_agent_1.ethers.Contract(constants_1.WSTETH_ADDRESS, ERC20Short_json_1.default, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/agent-balance.js",
+        "lineNumber": 88,
+        "line": "                    l2Provider = new forta_agent_1.ethers.providers.JsonRpcProvider(networkParams.rpcUrl);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/agent-balance.js",
+        "lineNumber": 89,
+        "line": "                    bridgedWstETH = new forta_agent_1.ethers.Contract(networkParams.wstEthBridged, ERC20Short_json_1.default, l2Provider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/agent.js",
+        "lineNumber": 92,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getTransaction(process_1.argv[4])];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/agent.js",
+        "lineNumber": 101,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getTransaction(process_1.argv[4])];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-balance/app/src/agent.js",
+        "lineNumber": 108,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getBlockNumber()];"
+    },
+    {
+        "filename": "/bot_code/ETH_-_Changes_in_Block_Difficulty/app/src/agent.js",
+        "lineNumber": 96,
+        "line": "    handleBlock: (0, exports.provideHandleBlock)(false, (0, forta_agent_1.getEthersProvider)(), utils_1.NUMBER_OF_BLOCKS_TO_CHECK, utils_1.FINDING_THRESHOLD),"
+    },
+    {
+        "filename": "/bot_code/forta-rand-monorepo/app/src/forta-token-impersonation-agent/dist/fetcher.js",
+        "lineNumber": 105,
+        "line": "            const receipts = await Promise.all(block.transactions.map((hash) => provider.getTransactionReceipt(hash)));"
+    },
+    {
+        "filename": "/bot_code/forta-rand-monorepo/app/src/forta-token-impersonation-agent/dist/utils.js",
+        "lineNumber": 48,
+        "line": "                const createdContract = ethers_1.ethers.utils.getContractAddress({ from: deployer, nonce });"
+    },
+    {
+        "filename": "/bot_code/forta-rand-monorepo/app/src/forta-token-impersonation-agent/dist/agent.js",
+        "lineNumber": 163,
+        "line": "    initialize: provideInitialize(data, (0, forta_agent_1.getEthersProvider)(), TRACE_API_SUPPORT),"
+    },
+    {
+        "filename": "/bot_code/forta-rand-monorepo/app/src/token-impersonation/fetcher.js",
+        "lineNumber": 105,
+        "line": "            const receipts = await Promise.all(block.transactions.map((hash) => provider.getTransactionReceipt(hash)));"
+    },
+    {
+        "filename": "/bot_code/forta-rand-monorepo/app/src/token-impersonation/utils.js",
+        "lineNumber": 48,
+        "line": "                const createdContract = ethers_1.ethers.utils.getContractAddress({ from: deployer, nonce });"
+    },
+    {
+        "filename": "/bot_code/forta-rand-monorepo/app/src/token-impersonation/agent.js",
+        "lineNumber": 163,
+        "line": "    initialize: provideInitialize(data, (0, forta_agent_1.getEthersProvider)(), TRACE_API_SUPPORT),"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/utils.js",
+        "lineNumber": 44,
+        "line": "var SOURCE_IFACE = new forta_agent_1.ethers.utils.Interface([exports.LATEST_TIMESTAMP_ABI]);"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/utils.js",
+        "lineNumber": 45,
+        "line": "var LENDING_POOL_IFACE = new forta_agent_1.ethers.utils.Interface([exports.GET_RESERVES_LIST_ABI]);"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/utils.js",
+        "lineNumber": 46,
+        "line": "var UMEE_ORACLE_IFACE = new forta_agent_1.ethers.utils.Interface([exports.GET_SOURCE_OF_ASSET_ABI]);"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/utils.js",
+        "lineNumber": 55,
+        "line": "                    chainLinkAggregator = new forta_agent_1.ethers.Contract(source, SOURCE_IFACE, provider);"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/utils.js",
+        "lineNumber": 72,
+        "line": "                umeeOracleContract = new forta_agent_1.ethers.Contract(config.umeeOracleAddress, UMEE_ORACLE_IFACE, provider);"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/utils.js",
+        "lineNumber": 84,
+        "line": "                lendingPoolContract = new forta_agent_1.ethers.Contract(config.lendingPoolAddress, LENDING_POOL_IFACE, provider);"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/agent.js",
+        "lineNumber": 163,
+        "line": "    initialize: (0, exports.provideInitialize)(assetsDataList, (0, forta_agent_1.getEthersProvider)(), agent_config_1.default),"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/agent.js",
+        "lineNumber": 164,
+        "line": "    handleTransaction: (0, exports.provideHandleTransaction)(assetsDataList, (0, forta_agent_1.getEthersProvider)(), agent_config_1.default),"
+    },
+    {
+        "filename": "/bot_code/umee-detect-stale-price/app/src/agent.js",
+        "lineNumber": 165,
+        "line": "    handleBlock: (0, exports.provideHandleBlock)(assetsDataList, (0, forta_agent_1.getEthersProvider)(), agent_config_1.default),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Unusual_PnL/app/src/agent.js",
+        "lineNumber": 82,
+        "line": "    initialize: (0, exports.initialize)((0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/PancakeSwap_-_Set_Masterchef_Settings/app/src/agent.js",
+        "lineNumber": 76,
+        "line": "    initialize: (0, exports.provideInitialize)(networkManager, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/umee-large-deposit-withdrawal-bot/app/src/price.fetcher.js",
+        "lineNumber": 66,
+        "line": "                        _a = utils_1.ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-large-deposit-withdrawal-bot/app/src/price.fetcher.js",
+        "lineNumber": 87,
+        "line": "                        _a = utils_1.ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-large-deposit-withdrawal-bot/app/src/utils.js",
+        "lineNumber": 5,
+        "line": "exports.ethersBnToBn = exports.createWithdrawalFinding = exports.createFinding = void 0;"
+    },
+    {
+        "filename": "/bot_code/umee-large-deposit-withdrawal-bot/app/src/utils.js",
+        "lineNumber": 45,
+        "line": "exports.ethersBnToBn = ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-large-deposit-withdrawal-bot/app/src/agent.js",
+        "lineNumber": 65,
+        "line": "                                        amount = (0, utils_1.ethersBnToBn)(log.args.amount, 6);"
+    },
+    {
+        "filename": "/bot_code/umee-large-deposit-withdrawal-bot/app/src/agent.js",
+        "lineNumber": 86,
+        "line": "    handleTransaction: (0, exports.provideHandleTransaction)(new price_fetcher_1.default((0, forta_agent_1.getEthersProvider)()), agent_config_1.default),"
+    },
+    {
+        "filename": "/bot_code/dai-bridged-balance-checker/app/src/agent.js",
+        "lineNumber": 70,
+        "line": "                    provider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/utils.js",
+        "lineNumber": 5,
+        "line": "exports.arrayChunks = exports.ethersBnToBn = exports.createFinding = void 0;"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/utils.js",
+        "lineNumber": 27,
+        "line": "exports.ethersBnToBn = ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/agent.js",
+        "lineNumber": 88,
+        "line": "    var EthUsdFeed = new forta_agent_1.ethers.Contract(config.ethUsdFeedAddress, [constants_1.LATEST_ANSWER_ABI], provider);"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/agent.js",
+        "lineNumber": 98,
+        "line": "                    _a = utils_1.ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/agent.js",
+        "lineNumber": 109,
+        "line": "                        var totalDebtUsd = (0, utils_1.ethersBnToBn)(accountData.totalDebtETH, 18).times(ethToUsd);"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/agent.js",
+        "lineNumber": 110,
+        "line": "                        var totalCollateralUsd = (0, utils_1.ethersBnToBn)(accountData.totalCollateralETH, 18).times(ethToUsd);"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/agent.js",
+        "lineNumber": 114,
+        "line": "                        var healthFactor = (0, utils_1.ethersBnToBn)(accountData.healthFactor, 18);"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/agent.js",
+        "lineNumber": 141,
+        "line": "    initialize: (0, exports.provideInitialize)(accounts, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/umee-health-factors-bot/app/src/agent.js",
+        "lineNumber": 145,
+        "line": "    handleBlock: (0, exports.provideHandleBlock)(accounts, (0, forta_agent_1.getEthersProvider)(), agent_config_1.default),"
+    },
+    {
+        "filename": "/bot_code/ChainLink_Agent/app/src/latestPriceUpdate.js",
+        "lineNumber": 47,
+        "line": "var ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/ChainLink_Agent/app/src/latestPriceUpdate.js",
+        "lineNumber": 48,
+        "line": "var linkContract = new forta_agent_1.ethers.Contract(constants_1.CHAINLINK_PRICE_AGG_ADDRESS, constants_1.LINK_ABI, ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/umee-high-gas-detection-bot/app/src/agent.js",
+        "lineNumber": 56,
+        "line": "                    _b = (_a = forta_agent_1.ethers.BigNumber).from;"
+    },
+    {
+        "filename": "/bot_code/umee-high-gas-detection-bot/app/src/agent.js",
+        "lineNumber": 96,
+        "line": "    handleTransaction: (0, exports.provideHandleTransaction)(agent_config_1.CONFIG, forta_agent_1.getTransactionReceipt),"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Large_Open_and_Increase_Positions/app/src/utils.js",
+        "lineNumber": 5,
+        "line": "exports.createFinding = exports.ethersBnToBn = void 0;"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Large_Open_and_Increase_Positions/app/src/utils.js",
+        "lineNumber": 11,
+        "line": "exports.ethersBnToBn = ethersBnToBn;"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Large_Open_and_Increase_Positions/app/src/agent.js",
+        "lineNumber": 94,
+        "line": "    initialize: (0, exports.initialize)((0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/Yearn_-_Instant_Withdrawal/app/src/abi.js",
+        "lineNumber": 4,
+        "line": "exports.vaultInterface = new ethers_1.ethers.utils.Interface(["
+    },
+    {
+        "filename": "/bot_code/Yearn_-_Instant_Withdrawal/app/src/abi.js",
+        "lineNumber": 9,
+        "line": "exports.vaultRegistryInterface = new ethers_1.ethers.utils.Interface(["
+    },
+    {
+        "filename": "/bot_code/Yearn_-_Instant_Withdrawal/app/src/agent.js",
+        "lineNumber": 46,
+        "line": "var FETCHER = new data_fetcher_1.default((0, forta_agent_1.getEthersProvider)(), axios_1.default);"
+    },
+    {
+        "filename": "/bot_code/BalanceChecker/app/src/agent.js",
+        "lineNumber": 76,
+        "line": "    handleBlock: (0, exports.provideBotHandler)((0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/PancakeSwap_-_Lottery_Admin_Operations/app/src/agent.js",
+        "lineNumber": 84,
+        "line": "    initialize: provideInitialize(networkManager, (0, forta_agent_1.getEthersProvider)()),"
+    },
+    {
+        "filename": "/bot_code/PancakeSwap_-_Large_LP_Deposit-Withdrawal/app/src/agent.js",
+        "lineNumber": 91,
+        "line": "    handleTransaction: (0, exports.provideHandleTransaction)(utils_1.createPair, new pool_fetcher_1.default((0, forta_agent_1.getEthersProvider)()), constants_1.POOL_SUPPLY_THRESHOLD, constants_1.THRESHOLD_PERCENTAGE, constants_1.FACTORY),"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-ethereum/app/src/agent-proxy-watcher.js",
+        "lineNumber": 170,
+        "line": "                    proxy = new forta_agent_1.ethers.Contract(proxyInfo.address, proxyInfo.shortABI, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-ethereum/app/src/agent-proxy-watcher.js",
+        "lineNumber": 224,
+        "line": "                    proxy = new forta_agent_1.ethers.Contract(proxyInfo.address, proxyInfo.shortABI, ethers_1.ethersProvider);"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-ethereum/app/src/ethers.js",
+        "lineNumber": 2,
+        "line": "exports.ethersProvider = void 0;"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-ethereum/app/src/ethers.js",
+        "lineNumber": 4,
+        "line": "exports.ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-ethereum/app/src/ethers.js",
+        "lineNumber": 4,
+        "line": "exports.ethersProvider = (0, forta_agent_1.getEthersProvider)();"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-ethereum/app/src/agent.js",
+        "lineNumber": 93,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getTransaction(process_1.argv[4])];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-ethereum/app/src/agent.js",
+        "lineNumber": 102,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getTransaction(process_1.argv[4])];"
+    },
+    {
+        "filename": "/bot_code/lido-l2-bridge-ethereum/app/src/agent.js",
+        "lineNumber": 109,
+        "line": "                return [4 /*yield*/, ethers_1.ethersProvider.getBlockNumber()];"
+    },
+    {
+        "filename": "/bot_code/GMX_-_Detect_Many_Opening/app/src/utils.js",
+        "lineNumber": 4,
+        "line": "var provider = (0, forta_agent_1.getEthersProvider)();"
+    }
+]
